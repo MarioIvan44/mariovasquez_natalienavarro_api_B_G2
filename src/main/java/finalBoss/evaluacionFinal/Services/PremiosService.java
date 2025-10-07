@@ -40,8 +40,13 @@ public class PremiosService {
         //Llave foránea
         if(entity.getId_pelicula() != null){
             dto.setId_pelicula(entity.getId_pelicula().getId_pelicula());
-            //Otros atributos de la FK ..........
-
+            //Otros atributos de la FK .........
+            dto.setTitulo(entity.getId_pelicula().getTitulo());
+            dto.setDirector(entity.getId_pelicula().getDirector());
+            dto.setGenero(entity.getId_pelicula().getGenero());
+            dto.setAno_estreno(entity.getId_pelicula().getAno_estreno());
+            dto.setDuracion_min(entity.getId_pelicula().getDuracion_min());
+            dto.setFecha_creacion(entity.getId_pelicula().getFecha_creacion());
         }
         else {
             dto.setId_pelicula(null);

@@ -14,6 +14,13 @@ public class DTOPremios {
     @Positive(message = "El id de la película no debe ser negativo")
     private Long id_pelicula;
     //otros campos de pk
+    private String titulo;
+    private String director;
+    private String genero;
+    private Double ano_estreno;
+    private Double duracion_min;
+    private Date fecha_creacion;
+
 
     @Size(max = 120,message = "El nombre premio no puede superar los 120 caracteres")
     private String nombre_premio;
