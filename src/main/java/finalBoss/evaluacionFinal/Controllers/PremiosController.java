@@ -58,7 +58,6 @@ public class PremiosController {
             log.error("Error inesperado al agregar el premio", e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of(
                     "status", "Error interno",
-                    "error", e.getMessage(),
                     "message", "Error inesperado al registrar el premio"
             ));
         }
